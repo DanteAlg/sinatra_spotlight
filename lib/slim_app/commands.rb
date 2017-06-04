@@ -17,6 +17,7 @@ module SlimApp
     end
 
     def new(opts)
+      SlimApp::Application.new(opts).build
     end
   end
 end

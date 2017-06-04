@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+ruby '2.3.1'
+
+gem 'rack'
+gem 'sinatra'
+gem 'sinatra-assetpack'
+gem 'json'
+
+group :test, :development do
+  gem 'byebug'
+  gem 'rspec'
+end
