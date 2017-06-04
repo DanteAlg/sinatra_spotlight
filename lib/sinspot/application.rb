@@ -26,7 +26,7 @@ module Sinspot
     def copy_templates
       [
         'gemfile', 'config.ru', 'README.md', 'config/environment.rb',
-        'app/views/home.erb', 'app/controllers/application_controller.rb',
+        'app/views/index.erb', 'app/controllers/application_controller.rb',
         'app/controllers/home_controller.rb', 'app/assets/stylesheets/reset.css',
         'app/assets/stylesheets/home.css'
       ].each do |file_path|
