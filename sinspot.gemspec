@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "sinatra_spotlight"
-  spec.version       = 1.0
+  spec.version       = '1.0.2'
   spec.authors       = ["Dante Santos"]
   spec.email         = ["dante.alighierimds@gmail.com"]
 
@@ -13,7 +13,9 @@ Gem::Specification.new do |spec|
   # to allow pushing to a single host or delete this section to allow pushing to any host.
 
   spec.executables   = ['sinspot']
+  spec.default_executable = 'sinspot'
   spec.require_paths = ['lib']
+  spec.files = Dir.glob("lib/**/*")
 
   spec.add_dependency 'sinatra', '~> 2.0'
   spec.add_dependency 'byebug', '~> 9.0.6'

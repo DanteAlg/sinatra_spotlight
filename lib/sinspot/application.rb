@@ -18,7 +18,7 @@ module Sinspot
 
     def create_app_folder
       puts 'Creating application directories...'
-      ['', 'app', 'app/controllers', 'app/views', 'config'].each do |dir|
+      ['', 'app', 'app/controllers', 'app/views', 'app/assets', 'app/assets/stylesheets', 'config'].each do |dir|
         `mkdir #{app_name}/#{dir}`
       end
     end
@@ -27,7 +27,8 @@ module Sinspot
       [
         'gemfile', 'config.ru', 'README.md', 'config/environment.rb',
         'app/views/home.html.erb', 'app/controllers/application_controller.rb',
-        'app/controllers/home_controller.rb'
+        'app/controllers/home_controller.rb', 'app/assets/stylesheets/reset.css',
+        'app/assets/stylesheets/home.css'
       ].each do |file_path|
         puts "Copy #{file_path} to application dir"
         FileUtils.cp([templates_path, file_path].join('/'), [app_name, file_path].join('/'))
