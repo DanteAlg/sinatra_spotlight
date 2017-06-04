@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'sinspot'
+
+ARGV << '-v' if ARGV.empty?
+
+Sinspot::Commands.call(ARGV.shift, ARGV)

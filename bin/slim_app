@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'slim_app'
-
-ARGV << '-v' if ARGV.empty?
-
-SlimApp::Commands.call(ARGV.shift, ARGV)

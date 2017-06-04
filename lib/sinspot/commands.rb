@@ -1,4 +1,4 @@
-module SlimApp
+module Sinspot
   class Commands
     DEFINED_ACTIONS = ['version', 'new']
     ALIASES = {
@@ -7,17 +7,17 @@ module SlimApp
 
     def self.call(action, opts)
       action = ALIASES[action] || action
-      raise "\"#{action}\" not is a slim_app method!" unless DEFINED_ACTIONS.include?(action)
+      raise "\"#{action}\" not is a Sinatra Spotlight method!" unless DEFINED_ACTIONS.include?(action)
 
       new.send(action, opts)
     end
 
     def version(opts)
-      puts "Slim App version #{SlimApp::VERSION}"
+      puts "Sinatra Spotlight version #{Sinspot::VERSION}"
     end
 
     def new(opts)
-      SlimApp::Application.new(opts).build
+      Sinspot::Application.new(opts).build
     end
   end
 end

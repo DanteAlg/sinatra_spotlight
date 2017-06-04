@@ -1,4 +1,4 @@
-module SlimApp
+module Sinspot
   class Application
     attr_reader :name
 

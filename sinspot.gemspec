@@ -1,19 +1,19 @@
 Gem::Specification.new do |spec|
-  spec.name          = "slim_app"
+  spec.name          = "sinatra_spotlight"
   spec.version       = 1.0
   spec.authors       = ["Dante Santos"]
   spec.email         = ["dante.alighierimds@gmail.com"]
 
-  spec.summary       = "Simple ruby web application"
-  spec.description   = "Build a simple ruby application with MVC format and specs"
+  spec.summary       = "A sinatra application generator"
+  spec.description   = "Build simple applications based on the mvc model of rails, in a lean way using sinatra as a web service."
   spec.homepage      = "https://github.com/DanteAlg/slim_app"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
 
-  spec.executables   = ['slim_app']
-  spec.require_paths = ["lib"]
+  spec.executables   = ['sinspot']
+  spec.require_paths = ['lib']
 
   spec.add_dependency 'sinatra', '~> 2.0'
   spec.add_dependency 'byebug', '~> 9.0.6'
