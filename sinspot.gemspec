@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "sinatra_spotlight"
-  spec.version       = '1.0.2'
+  spec.version       = '1.0.3'
   spec.authors       = ["Dante Santos"]
   spec.email         = ["dante.alighierimds@gmail.com"]
 
@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
   spec.default_executable = 'sinspot'
   spec.require_paths = ['lib']
   spec.files = Dir.glob("lib/**/*")
+  spec.required_ruby_version = '>= 2.1.0'
 
   spec.add_dependency 'sinatra', '~> 2.0'
   spec.add_dependency 'byebug', '~> 9.0.6'
