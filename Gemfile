@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in rinrails.gemspec
+# Specify your gem's dependencies in slim_app.gemspec
 gemspec
