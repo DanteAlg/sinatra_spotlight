@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "sinatra_spotlight"
-  spec.version       = '1.0.4'
+  spec.version       = '1.0.5'
   spec.authors       = ["Dante Santos"]
   spec.email         = ["dante.alighierimds@gmail.com"]
 
