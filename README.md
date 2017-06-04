@@ -19,4 +19,5 @@ Turning the spotlight on the old Sinatra!
 
 ## Run application
 
-`rackup config.ru`
+- `bundle`
+- `rackup config.ru`

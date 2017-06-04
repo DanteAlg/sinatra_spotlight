@@ -3,11 +3,13 @@ class ApplicationController < Sinatra::Base
 
   register Sinatra::AssetPack
 
+=begin
   assets do
     serve '/css', from: '../assets/stylesheets/'
 
     css_compression :simple
   end
+=end
 
   # set folder for templates to ../views, but make the path absolute
   set :views, File.expand_path('../../views', __FILE__)
