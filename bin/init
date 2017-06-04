@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'slim_app'
+
+SlimApp::Test.init
