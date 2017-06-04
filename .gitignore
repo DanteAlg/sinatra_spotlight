@@ -3,4 +3,6 @@
 /Gemfile.lock
 /tmp/
 /*.gem
+/.byebug_history
+/dummy_app/
 

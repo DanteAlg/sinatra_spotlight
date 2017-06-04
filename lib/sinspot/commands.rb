@@ -13,6 +13,7 @@ module Sinspot
     end
 
     def version(opts)
+      return puts(Sinspot::VERSION) if opts.include?('--verbose')
       puts "Sinatra Spotlight version #{Sinspot::VERSION}"
     end
 

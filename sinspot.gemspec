@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A sinatra application generator"
   spec.description   = "Build simple applications based on the mvc model of rails, in a lean way using sinatra as a web service."
-  spec.homepage      = "https://github.com/DanteAlg/slim_app"
+  spec.homepage      = "https://github.com/DanteAlg/sinatra_spotlight"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

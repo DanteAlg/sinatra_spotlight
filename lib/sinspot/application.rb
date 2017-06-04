@@ -1,24 +1,37 @@
 module Sinspot
   class Application
-    attr_reader :name
+    attr_reader :app_name, :templates_path
 
     def initialize(opts)
       raise "Plase, set a app name to create a new slim app" if opts.empty?
 
-      @name = opts.shift
+      @app_name = opts.shift
+      @templates_path = "#{File.expand_path(File.dirname(__FILE__))}/templates"
     end
 
     def build
-      puts 'Creating application folder...'
-      `mkdir #{@name}`
-
-      puts 'Add Gemfile and run bundler...'
-      ``
+      create_app_folder
+      copy_templates
     end
 
     private
 
-    def build_gemfile
+    def create_app_folder
+      puts 'Creating application directories...'
+      ['', 'app', 'app/controllers', 'app/views', 'config'].each do |dir|
+        `mkdir #{app_name}/#{dir}`
+      end
+    end
+
+    def copy_templates
+      [
+        'gemfile', 'config.ru', 'README.md', 'config/environment.rb',
+        'app/views/home.html.erb', 'app/controllers/application_controller.rb',
+        'app/controllers/home_controller.rb'
+      ].each do |file_path|
+        puts "Copy #{file_path} to application dir"
+        FileUtils.cp([templates_path, file_path].join('/'), [app_name, file_path].join('/'))
+      end
     end
   end
 end

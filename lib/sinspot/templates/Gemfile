@@ -10,4 +10,5 @@ gem 'json'
 group :test, :development do
   gem 'byebug'
   gem 'rspec'
+  gem 'rack-test'
 end
